@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet">
+    <script defer src="./script.js"></script>
+    <script type="text/javascript" src="userA.json"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="form">
+        <div id="form__header">
+          <h1>Поиск свободных интервалов</h1>
+        </div>
+        <div id="form__main">
+          <div id="form__main_search">
+            <input type="number" step="1" placeholder="Продолжительность" />
+            <button type="button">Поиск</button>
+          </div>
+          <div id="form__main_error">
+            <div id="error">
+              <span>Превышает заданный диапозон</span>
+            </div>
+          </div>
+        </div>
+        <div id="form__footer">
+          <div id="component_list"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

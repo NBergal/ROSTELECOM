@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap");
+
+* {
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 0px;
+  padding: 10px;
+  color: #999999;
+}
+
+input {
+  flex-grow: 2;
+  margin-right: 20px;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #dfdfdf;
+  border-radius: 5px;
+  font-size: 100%;
+  color: #000;
+}
+
+input[type="number"]::-webkit-input-placeholder {
+  color: #b6b6b6;
+}
+input[type="number"]::-moz-placeholder {
+  color: #b6b6b6;
+}
+
+button {
+  flex-grow: 1;
+  width: 40px;
+  padding: 10px;
+  background: #3d8ccd;
+  color: #fff;
+  border: 2px solid #dfdfdf;
+  border-radius: 5px;
+  font-size: 100%;
+}
+
+#error > span {
+  color: red;
+  padding: 10px;
+}
+
+#wrap {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #518c95;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+#form {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-radius: 5px;
+  border: 2px solid #dfdfdf;
+}
+
+#form__header {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 16%;
+}
+
+#form__main {
+  flex-grow: 1;
+  padding-top: 20px;
+}
+
+#form__main_search,
+#form__main_error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0px 20px 20px 20px;
+}
+
+#error {
+  display: none;
+  justify-content: start;
+  align-items: center;
+  background: #f2dedf;
+  border-radius: 5px;
+  font-size: 80%;
+  width: 100%;
+  height: 42px;
+}
+
+#form__footer {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  min-height: 34%;
+}
+
+#component_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  height: auto;
+}
+
+#component_list__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #58b957;
+  height: 42px;
+  padding: 0px 10px 0px 10px;
+  margin: 0px 10px 10px 0px;
+  border-radius: 5px;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+#form__header,
+#form__footer {
+  background: #f7f7f7;
+}
+
+#form > * {
+  width: 100%;
+}
